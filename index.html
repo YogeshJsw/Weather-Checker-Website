@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="head">
+
+    <header>
+        <nav>
+            <div class="title">
+                <h1>Weather Website</h1>
+            </div>
+            <div class="search">
+                <form role="search">
+                    <input type="search" placeholder="Enter city name" aria-label="Search" spellcheck="false">
+                    <button type="submit">Search</button>
+                    <div class="error">Invalid City Name(Default:Delhi)</div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="colorss">
+        <div class="weather">
+            <img class="icon" src="rain.png" alt="Rain image">
+            <h1 class="temperature" style="color: white;"></h1>
+            <img src="loc-ion.png" height="50px" width="40px"
+                style="background-color: #333333; filter: drop-shadow(0 0 5px white); border-radius: 20px; "><span
+                class="city"> </span>
+            <div class="sub-details1">
+                <div>
+                    <p class="min-temp"></p>
+                    <p class="temp-label">&nbsp;&nbsp;Min Temperature</p>
+                </div>
+                <div style="margin-top: 10px;">
+                    <p class="max-temp"></p>
+                    <p class="temp-label">&nbsp;&nbsp;Max Temperature</p>
+                </div>
+            </div>
+
+            <div class="details">
+
+                <div class="sub-details">
+                    <img src="humidity.png" alt="humidity image">
+                    <div>
+                        <p class="humidity"></p>
+                        <p class="humid">&nbsp;&nbsp;humidity</p>
+                    </div>
+                </div>
+                <div class="sub-details">
+                    <div>
+                        <p class="feels-like"></p>
+                        <p class="feel">&nbsp;&nbsp;Feels-like</p>
+                    </div>
+                </div>
+                <div class="sub-details">
+                    <div>
+                        <p class="pressure"></p>
+                        <p class="press">&nbsp;&nbsp;Air Pressure</p>
+                    </div>
+                </div>
+                <div class="sub-details">
+                    <img src="wind.png" alt="wind image">
+                    <div>
+                        <p class="wind"></p>
+                        <p>&nbsp;&nbsp;Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
